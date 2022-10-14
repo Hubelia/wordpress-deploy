@@ -1,15 +1,15 @@
 <?php
     /*
-    Plugin Name: Environment Management
-    Description: A plugin to push changes to the production env.
-    Author: Mohamad Kredly - Hubelia
+    Plugin Name: Deployment manager
+    Description: Plugin to publish staging changes to production in Kubernetes Environment.
+    Author: Hubelia
     */
 
     // ENV_TYPE: Enviromental variable that indicates the environment type
-    // 1 = Staging (push)
-    // 2 = Prod (pull)
+    // 1 = staging (Publish)
+    // 2 = production (Get Changes)
 
-    switch (getenv("ENV_TYPE")) {
+    switch (getenv("WP_ENV")) {
       case 1:
         add_action ('adminmenu', 'add_hubelia_migrations');
         add_action( 'wp_ajax_push_changes', 'push_changes_callback' );

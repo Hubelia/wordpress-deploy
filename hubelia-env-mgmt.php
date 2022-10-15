@@ -8,11 +8,12 @@
     // ENV_TYPE: Enviromental variable that indicates the environment type
     // 1 = staging (Publish)
     // 2 = production (Get Changes)
+    add_action ('adminmenu', 'add_hubelia_migrations');
+    add_action( 'wp_ajax_push_changes', 'push_changes_callback' );
 
     switch (getenv("WP_ENV")) {
       case 1:
-        add_action ('adminmenu', 'add_hubelia_migrations');
-        add_action( 'wp_ajax_push_changes', 'push_changes_callback' );
+
         break;
     }
 

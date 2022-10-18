@@ -6,7 +6,7 @@
         global $pagenow;
         $args = array(
             'id'=>'push',
-            'title'=>'Push Changes',
+            'title'=>'Publish Changes',
             'href'=>''
         );
         $admin_bar->add_menu( $args );

@@ -1,6 +1,6 @@
 <?php
     /*
-    Plugin Name: Deployment manager
+    Plugin Name: Hubelia - Deployment manager
     Description: Plugin to publish staging changes to production in Kubernetes Environment.
     Author: Hubelia
     */

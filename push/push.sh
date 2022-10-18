@@ -3,7 +3,7 @@
 # -- Variables --
 
 # DB:
-touch /tmp/deployToProduction
+touch /app/web/wp-content/plugins/wordpress-deploy/deployToProduction
 # EXTRA_REGEX="$1"
 # WORDPRESS_DB_HOST="$2"
 # WORDPRESS_DB_USER="$3"

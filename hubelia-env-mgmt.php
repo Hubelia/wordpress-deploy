@@ -53,7 +53,7 @@
       // DB + Files
       exec("/bin/bash $path/push/push.sh", $response);
 
-      $response = "Changes pushed, please wait a few minutes to see the changes in production.";
+      $response = " Changes pushed, please wait a few minutes to see the changes in production.";
       // echo implode("\n", $response);
       echo($response);
       wp_die(); /* this is required to terminate immediately and return a proper     response */
